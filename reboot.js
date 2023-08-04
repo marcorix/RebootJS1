@@ -1,6 +1,6 @@
 
+const ul = document.querySelector('.list-colors');
 const btnLarge = document.querySelector('.btn-lg a');
-const ul = document.querySelector('ul')
 const figures = document.querySelectorAll(".figures-box > *");
 
 const names = ["purple", "cyan", "sandybrown", "aquamarine"];

@@ -15,13 +15,6 @@ body {
   padding: 50px;
 }
 
-.btn-box {
-  background-color: rgb(51, 51, 51);
-  height: 42px;
-  margin-bottom: 24px;
-  padding: 16px;
-}
-
 .square {
   background-color: orange;
   width: 100px;
@@ -42,14 +35,20 @@ body {
   padding: 8px
 }
 
+.colors-box {
+  background-color: rgb(51, 51, 51);
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+
 .list-colors {
   display:flex;
   justify-content: space-between;
 }
 
-ul li {
+.list-colors li {
   list-style-type: none;
-  display: inline;
   margin-left: 0;
   color: white;
 }
