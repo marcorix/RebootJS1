@@ -45,6 +45,7 @@ body {
 .list-colors {
   display:flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .list-colors li {
