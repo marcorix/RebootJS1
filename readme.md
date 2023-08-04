@@ -18,6 +18,9 @@ console.log("hello world!")
 ### Step 4
 9. Hide the ul
 9. Create a button like in the picture
-10. Add the event listener to the button to display all the colors
+10. Add an event listener to the button to display all the colors
 
 ### Step 4
+11. Each color should be a link
+12. Add an event listener to all of them so that on click they will
+    console log the color

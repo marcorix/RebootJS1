@@ -1,7 +1,7 @@
 
 const btnLarge = document.querySelector('.btn-lg a');
 const ul = document.querySelector('ul')
-const figures = document.querySelectorAll(".main-box > *");
+const figures = document.querySelectorAll(".figures-box > *");
 
 const names = ["purple", "cyan", "sandybrown", "aquamarine"];
 
@@ -23,9 +23,11 @@ btnLarge.addEventListener('click', (e) => {
 
 
 
-document.querySelectorAll(".btn").forEach((element) => {
-  element.addEventListener("click", (e) => {
-
-    console.log(e.currentTarget.text);
+document.querySelectorAll(".btn-color").forEach((color) => {
+  color.addEventListener("click", (e) => {
+    figures.forEach((element) => {
+      element.style.backgroundColor = e.currentTarget.text;
+      console.log(e.currentTarget.text);
+    })
   });
 });
