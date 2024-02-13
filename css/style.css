@@ -1,14 +1,11 @@
-body {
-  background-color: lightgray;
-}
 
-.container {
+.wrapper {
   width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
-.figures-box {
-  background-color: white;
+.shape-box {
+  background-color: lightgray;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,56 +25,36 @@ body {
   border-radius: 50%;
 }
 
-.rettangle {
+.rectangle {
   background-color:palegreen;
   width: 100px;
   height: 150px;
   padding: 8px
 }
 
-.colors-box {
-  background-color: rgb(51, 51, 51);
+.color-box {
+  background-color: #3c3c3c;
   margin-bottom: 24px;
   padding: 16px;
 }
 
-
-.list-colors {
+.color-list {
   display:flex;
   justify-content: space-between;
   padding: 0;
 }
 
-.list-colors li {
+.color-list li {
   list-style-type: none;
   margin-left: 0;
   color: white;
 }
 
-a {
-  text-decoration: none;
+.color-box a {
   color: white;
+  text-decoration: none;
 }
 
-.btn-lg {
-  display: flex;
-  justify-content: center;
-}
-
-.btn-lg a:hover {
-  background-color: rgb(193, 114, 193);
-}
-
-.btn-lg a {
-  background-color: plum;
-  padding: 24px 48px;
-  border-radius: 32px;
-  font-size: 24px;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-
-.d-none {
-  display: none;
+.color-box a:hover {
+  color: gray;
 }

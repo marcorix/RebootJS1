@@ -1,33 +1,32 @@
+const ul = document.querySelector('.color-list');
+const btn = document.querySelector('button');
+const shapes = document.querySelectorAll(".shape-box > *");
 
-const ul = document.querySelector('.list-colors');
-const btnLarge = document.querySelector('.btn-lg a');
-const figures = document.querySelectorAll(".figures-box > *");
+const colors = ["purple", "cyan", "sandybrown", "aquamarine"];
 
-const names = ["purple", "cyan", "sandybrown", "aquamarine"];
-
-const displayNames = (array) => {
-  array.forEach((element) => {
-    ul.insertAdjacentHTML(
-      "beforeend",
-      `<li><a href="#" class="btn-color">${element}</a></li>`
-    );
-  });
+const displayColors = (colors) => {
+  colors.forEach((color) => {
+    ul.insertAdjacentHTML("beforeend", `<li><a href="#">${color}</a></li>`);
+  })
 };
 
-displayNames(names);
+displayColors(colors)
 
-
-btnLarge.addEventListener('click', (e) => {
-  ul.classList.toggle('d-none');
+btn.addEventListener('click', () => {
+  ul.classList.toggle("d-none");
 })
 
 
-
-document.querySelectorAll(".btn-color").forEach((color) => {
-  color.addEventListener("click", (e) => {
-    figures.forEach((element) => {
-      element.style.backgroundColor = e.currentTarget.text;
-      console.log(e.currentTarget.text);
-    })
+const changColor = (color) => {
+  shapes.forEach((shape) => {
+    shape.style.backgroundColor = color;
   });
-});
+}
+
+const colorLinks = document.querySelectorAll('li a')
+
+colorLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    changColor(e.currentTarget.text)
+  })
+})
