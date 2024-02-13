@@ -17,7 +17,7 @@ btn.addEventListener('click', () => {
 })
 
 
-const changColor = (color) => {
+const changeColor = (color) => {
   shapes.forEach((shape) => {
     shape.style.backgroundColor = color;
   });
@@ -27,6 +27,6 @@ const colorLinks = document.querySelectorAll('li a')
 
 colorLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
-    changColor(e.currentTarget.text)
+    changeColor(e.currentTarget.text)
   })
 })
